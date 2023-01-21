@@ -104,12 +104,14 @@ public class Subtracionintro : MonoBehaviour
        
         for (int i=0;i<G_Selected.transform.childCount-1;i++)
         {
+          
             if (G_Selected.transform.GetChild(i).name == G_Selected.transform.GetChild(i).GetComponent<InputField>().text)
             {
                 I_Count++;
-                if(I_Count == 2)
+                if (I_Count == 2)
                 {
                     AS_Crt.Play();
+                   
                     /*for (int k = 0; k < G_Selected.transform.childCount - 1; k++)
                     {
                         G_Selected.transform.GetChild(k).
